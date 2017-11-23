@@ -1,0 +1,13 @@
+
+<h1>Nos doses</h1>
+
+<% @doses.each do |dose| %>
+  <p><%= link_to "#{dose.name}", dose_path(dose) %>
+      <% end %>
+
+
+
+
+
+
+
