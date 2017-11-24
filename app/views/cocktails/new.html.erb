@@ -1,8 +1,13 @@
-<h1>Add a new cocktail !</h1>
-
-<%= simple_form_for @cocktail do |c| %>
-  <%= c.input :name %>
-  <%= c.button :submit %>
-<% end %>
-
-
+<div class="container" style="background-image: url('<%= image_path 'sante.jpg' %>')">
+  <div class="row">
+  <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-new" >
+    <p>Add a new cocktail !</p>
+      <%= simple_form_for @cocktail do |c| %>
+        <%= c.input :name %>
+        <%= c.input :photo %>
+        <%= c.input :photo_cache, as: :hidden %>
+        <%= c.button :submit %>
+      <% end %>
+    </div>
+  </div>
+</div>

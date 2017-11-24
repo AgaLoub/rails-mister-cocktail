@@ -3,3 +3,22 @@
 // @import "dashboard";
 // @import "profile";
 // @import "map";
+
+.container-fluid {
+  height: 100vh;
+}
+
+.row {
+  padding: 30px 150px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.btn {
+  border-radius: 10px;
+  background-color: #F6BF00;
+  color: white;
+  font-size: 15px;
+}
